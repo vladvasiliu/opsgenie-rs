@@ -18,6 +18,10 @@
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/serde_json-3580829734a778ed/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/syn-8b6c0175f9d1a291/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/unicase-0cf35727e18b3dec/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/debug/build/bitflags-5a40a5f9695e95a9/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/debug/build/native-tls-037e840f78b3c40e/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/debug/build/openssl-cf09472bcfaea2ca/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/debug/build/openssl-sys-04b2571766d89b60/out" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
