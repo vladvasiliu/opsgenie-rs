@@ -26,9 +26,9 @@ pub struct Incident {
     #[serde(rename = "tags", skip_serializing_if = "Option::is_none")]
     pub tags: Option<Vec<String>>,
     #[serde(rename = "createdAt", skip_serializing_if = "Option::is_none")]
-    pub created_at: Option<String>,
+    pub created_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "updatedAt", skip_serializing_if = "Option::is_none")]
-    pub updated_at: Option<String>,
+    pub updated_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "source", skip_serializing_if = "Option::is_none")]
     pub source: Option<String>,
     #[serde(rename = "owner", skip_serializing_if = "Option::is_none")]

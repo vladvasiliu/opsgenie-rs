@@ -1,17 +1,13 @@
 [package]
 name = "opsgenie-rs"
-version = "0.1.0"
-authors = ["OpenAPI Generator team and contributors"]
+version = "0.1.0-alpha1"
+authors = ["Vlad Vasiliu"]
 edition = "2018"
 
 [dependencies]
 serde = "^1.0"
 serde_derive = "^1.0"
 serde_json = "^1.0"
-url = "1.5"
-[dependencies.reqwest]
-#version = "^0.10"
-git = "https://github.com/seanmonstar/reqwest.git"
-features = ["json"]
-
-[dev-dependencies]
+url = "2.2"
+chrono = { version = "0.4", features = ["serde"]}
+reqwest = { git = "https://github.com/seanmonstar/reqwest.git", features = ["json"] }

@@ -18,7 +18,7 @@ pub struct IncidentRequestStatus {
     #[serde(rename = "action", skip_serializing_if = "Option::is_none")]
     pub action: Option<String>,
     #[serde(rename = "processedAt", skip_serializing_if = "Option::is_none")]
-    pub processed_at: Option<String>,
+    pub processed_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "integrationId", skip_serializing_if = "Option::is_none")]
     pub integration_id: Option<String>,
     #[serde(rename = "isSuccess", skip_serializing_if = "Option::is_none")]

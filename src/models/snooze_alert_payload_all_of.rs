@@ -15,11 +15,11 @@
 pub struct SnoozeAlertPayloadAllOf {
     /// Date and time that snooze will lose effect
     #[serde(rename = "endTime")]
-    pub end_time: String,
+    pub end_time: chrono::DateTime<chrono::offset::Utc>,
 }
 
 impl SnoozeAlertPayloadAllOf {
-    pub fn new(end_time: String) -> SnoozeAlertPayloadAllOf {
+    pub fn new(end_time: chrono::DateTime<chrono::offset::Utc>) -> SnoozeAlertPayloadAllOf {
         SnoozeAlertPayloadAllOf {
             end_time,
         }

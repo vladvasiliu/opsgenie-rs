@@ -20,7 +20,7 @@ pub struct AlertLog {
     #[serde(rename = "owner", skip_serializing_if = "Option::is_none")]
     pub owner: Option<String>,
     #[serde(rename = "createdAt", skip_serializing_if = "Option::is_none")]
-    pub created_at: Option<String>,
+    pub created_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "offset", skip_serializing_if = "Option::is_none")]
     pub offset: Option<String>,
 }

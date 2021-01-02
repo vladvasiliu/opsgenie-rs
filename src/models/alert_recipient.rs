@@ -20,9 +20,9 @@ pub struct AlertRecipient {
     #[serde(rename = "method", skip_serializing_if = "Option::is_none")]
     pub method: Option<String>,
     #[serde(rename = "createdAt", skip_serializing_if = "Option::is_none")]
-    pub created_at: Option<String>,
+    pub created_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "updatedAt", skip_serializing_if = "Option::is_none")]
-    pub updated_at: Option<String>,
+    pub updated_at: Option<chrono::DateTime<chrono::offset::Utc>>,
 }
 
 impl AlertRecipient {

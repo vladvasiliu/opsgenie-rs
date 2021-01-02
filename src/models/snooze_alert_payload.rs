@@ -24,11 +24,11 @@ pub struct SnoozeAlertPayload {
     pub source: Option<String>,
     /// Date and time that snooze will lose effect
     #[serde(rename = "endTime")]
-    pub end_time: String,
+    pub end_time: chrono::DateTime<chrono::offset::Utc>,
 }
 
 impl SnoozeAlertPayload {
-    pub fn new(end_time: String) -> SnoozeAlertPayload {
+    pub fn new(end_time: chrono::DateTime<chrono::offset::Utc>) -> SnoozeAlertPayload {
         SnoozeAlertPayload {
             user: None,
             note: None,

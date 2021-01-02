@@ -26,7 +26,7 @@ pub struct Heartbeat {
     #[serde(rename = "expired", skip_serializing_if = "Option::is_none")]
     pub expired: Option<bool>,
     #[serde(rename = "lastPingTime", skip_serializing_if = "Option::is_none")]
-    pub last_ping_time: Option<String>,
+    pub last_ping_time: Option<chrono::DateTime<chrono::offset::Utc>>,
 }
 
 impl Heartbeat {

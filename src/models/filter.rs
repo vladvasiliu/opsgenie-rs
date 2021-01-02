@@ -14,15 +14,15 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(tag = "type")]
 pub enum Filter {
-    #[serde(rename="MatchAll")]
+    #[serde(rename="match-all")]
     MatchAll {
     },
-    #[serde(rename="MatchAllConditions")]
+    #[serde(rename="match-all-conditions")]
     MatchAllConditions {
         #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
         conditions: Option<Vec<crate::models::Condition>>,
     },
-    #[serde(rename="MatchAnyCondition")]
+    #[serde(rename="match-any-condition")]
     MatchAnyCondition {
         #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
         conditions: Option<Vec<crate::models::Condition>>,

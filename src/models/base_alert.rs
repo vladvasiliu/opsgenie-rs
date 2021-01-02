@@ -32,15 +32,15 @@ pub struct BaseAlert {
     #[serde(rename = "snoozed", skip_serializing_if = "Option::is_none")]
     pub snoozed: Option<bool>,
     #[serde(rename = "snoozedUntil", skip_serializing_if = "Option::is_none")]
-    pub snoozed_until: Option<String>,
+    pub snoozed_until: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "count", skip_serializing_if = "Option::is_none")]
     pub count: Option<i32>,
     #[serde(rename = "lastOccurredAt", skip_serializing_if = "Option::is_none")]
-    pub last_occurred_at: Option<String>,
+    pub last_occurred_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "createdAt", skip_serializing_if = "Option::is_none")]
-    pub created_at: Option<String>,
+    pub created_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "updatedAt", skip_serializing_if = "Option::is_none")]
-    pub updated_at: Option<String>,
+    pub updated_at: Option<chrono::DateTime<chrono::offset::Utc>>,
     #[serde(rename = "source", skip_serializing_if = "Option::is_none")]
     pub source: Option<String>,
     #[serde(rename = "owner", skip_serializing_if = "Option::is_none")]

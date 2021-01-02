@@ -14,12 +14,12 @@ OpsGenie also provide a repository for the OpenAPI specification, but it doesn't
 The client is generated with [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator).
 
 ```
-docker run --rm \   
-  -v ${PWD}:/local openapitools/openapi-generator-cli generate \
-  -i https://raw.githubusercontent.com/opsgenie/opsgenie-python-sdk/master/opsgenie-oas.yml \
-  -g rust \
-  -o /local/ \
-  --additional-properties=packageName=opsgenie-rs,packageVersion=0.1.0,library=reqwest,hideGenerationTimestamp=false
+java -jar openapi-generator-cli-5.0.0.jar generate \
+  --input-spec opsgenie-oas.yml \
+  --generator-name rust \
+  --config generator.json \
+  --type-mappings=DateTime="chrono::DateTime<chrono::offset::Utc>",Date="chrono::Date<chrono::offset::Utc>" \
+  --import-mappings="chrono::DateTime<chrono::offset::Utc>",Date="chrono::Date<chrono::offset::Utc>"
 ```
 
 ## Documentation for API Endpoints
