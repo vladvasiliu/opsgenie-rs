@@ -1,13 +1,19 @@
 [package]
 name = "opsgenie-rs"
 version = "0.1.0-alpha1"
+description = "Rust client for OpsGenie API"
 authors = ["Vlad Vasiliu"]
 edition = "2018"
+license = "Apache-2.0"
+homepage = "https://github.com/vladvasiliu/opsgenie-rs"
+repository = "https://github.com/vladvasiliu/opsgenie-rs"
+readme = "README.md"
+keywords = ["opsgenie", "devops"]
 
 [dependencies]
 serde = "^1.0"
 serde_derive = "^1.0"
 serde_json = "^1.0"
-url = "2.2"
-chrono = { version = "0.4", features = ["serde"]}
+url = "^2.2"
+chrono = { version = "^0.4", features = ["serde"]}
 reqwest = { git = "https://github.com/seanmonstar/reqwest.git", features = ["json"] }
