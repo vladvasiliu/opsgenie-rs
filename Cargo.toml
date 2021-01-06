@@ -9,6 +9,7 @@ homepage = "https://github.com/vladvasiliu/opsgenie-rs"
 repository = "https://github.com/vladvasiliu/opsgenie-rs"
 readme = "README.md"
 keywords = ["opsgenie", "devops"]
+categories = ["api-bindings"]
 
 [dependencies]
 serde = "^1.0"
@@ -16,4 +17,4 @@ serde_derive = "^1.0"
 serde_json = "^1.0"
 url = "^2.2"
 chrono = { version = "^0.4", features = ["serde"]}
-reqwest = { git = "https://github.com/seanmonstar/reqwest.git", features = ["json"] }
+reqwest = { version = "^0.11", features = ["json"] }
