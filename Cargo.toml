@@ -1,6 +1,6 @@
 [package]
 name = "opsgenie-rs"
-version = "0.1.0-alpha1"
+version = "0.1.0-alpha.1"
 description = "Rust client for OpsGenie API"
 authors = ["Vlad Vasiliu"]
 edition = "2018"
