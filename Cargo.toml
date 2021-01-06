@@ -10,6 +10,10 @@ repository = "https://github.com/vladvasiliu/opsgenie-rs"
 readme = "README.md"
 keywords = ["opsgenie", "devops"]
 categories = ["api-bindings"]
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
 
 [dependencies]
 serde = "^1.0"
@@ -18,3 +22,4 @@ serde_json = "^1.0"
 url = "^2.2"
 chrono = { version = "^0.4", features = ["serde"]}
 reqwest = { version = "^0.11", features = ["json", "multipart"] }
+
